@@ -3,20 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Catalog</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Lavz Collections</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Our Business Catalog</h1>
+    <h1>LAVz COLLECTIONS</h1>
   </header>
   <main>
     <section id="banner">
       <img src="./images/banner.jpg" alt="Banner Image">
     </section>
-    <section id="catalog">
-      <h2>Our Products</h2>
-      <div class="product">
+    <section id="subtitle">
+      <h2>Categories</h2>
+    </section>
+    <section id="categories">
+      <div class="category" onclick="showProducts('category1')">
+        <img src="./images/category1.jpg" alt="Category 1">
+        <div class="category-info">
+          <h3>Hair Bands</h3>
+        </div>
+      </div>
+      <div class="category" onclick="showProducts('category2')">
+        <img src="./images/category2.jpg" alt="Category 2">
+        <div class="category-info">
+          <h3>Hair Clips</h3>
+        </div>
+      </div>
+      <div class="category" onclick="showProducts('category3')">
+        <img src="./images/category3.jpg" alt="Category 3">
+        <div class="category-info">
+          <h3>Hair Clucthes</h3>
+        </div>
+      </div>
+      <!-- Add more categories as needed -->
+    </section>
+    <section id="products" style="display: none;">
+      <button onclick="showCategories()">Back to Categories</button>
+      <h2 id="category-title">Products</h2>
+      <div class="product category1">
         <img src="./images/product1.jpg" alt="Product 1">
         <div class="product-info">
           <h3>Product 1</h3>
@@ -24,7 +49,7 @@
           <p>Price: $XX.XX</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product category1">
         <img src="./images/product2.jpg" alt="Product 2">
         <div class="product-info">
           <h3>Product 2</h3>
@@ -32,11 +57,28 @@
           <p>Price: $XX.XX</p>
         </div>
       </div>
+      <div class="product category2">
+        <img src="product3.jpg" alt="Product 3">
+        <div class="product-info">
+          <h3>Product 3</h3>
+          <p>Description of Product 3</p>
+          <p>Price: $XX.XX</p>
+        </div>
+      </div>
+      <div class="product category2">
+        <img src="product4.jpg" alt="Product 4">
+        <div class="product-info">
+          <h3>Product 4</h3>
+          <p>Description of Product 4</p>
+          <p>Price: $XX.XX</p>
+        </div>
+      </div>
       <!-- Add more products as needed -->
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Your Business Name</p>
+    <p>&copy; 2024 Lavz Collections</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
